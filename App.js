@@ -26,6 +26,9 @@ export default function App() {
             component={CategoriesScreen}
             options={{
               title: "All Categories",
+              // headerStyle: { backgroundColor: "#351401" },
+              // headerTintColor: "white",
+              // contentStyle: { backgroundColor: "#3f2f25" },
             }}
           />
           <Stack.Screen
@@ -39,7 +42,15 @@ export default function App() {
             //   };
             // }}
           />
-          <Stack.Screen name="MealDetail" component={MealDetailScreen} />
+          <Stack.Screen
+            name="MealDetail"
+            component={MealDetailScreen}
+            // options={{
+            //   headerRight: () => {
+            //     return <Button title="Tap me!" />;
+            //   },
+            // }}
+          />
         </Stack.Navigator>
       </NavigationContainer>
     </>
